@@ -1,5 +1,6 @@
 <template>
-    <div class="z-50 bg-neutral-700">
+    
+    <div class="z-50 sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
         <nav class="w-full shadow-md">
             <ul class="flex items-center justify-between container list-none px-2 py-4 mx-auto">
                 <li class="text-white">
