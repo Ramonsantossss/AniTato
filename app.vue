@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-slate-900">
+  <div class="min-h-screen bg-neutral-800">
     <Navbar class="sticky top-0" :user-id="userId" />
     <NuxtLayout>
       <NuxtLoadingIndicator />

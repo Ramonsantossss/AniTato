@@ -10,7 +10,7 @@
                     </div>
                 </div>
             </div>
-            <div class="z-10 relative bg-slate-900">
+            <div class="z-10 relative bg-neutral-800">
                 <div class="p-4 mt-4 mx-auto md:w-3/4">
                     <div v-if="anime.otherName" class="text-zinc-400 mb-4 text-xs">{{ anime.title }}</div>
                     <h1 class="text-lg lg:text-2xl text-white mb-2">{{ anime.otherName ?? anime.title }}
