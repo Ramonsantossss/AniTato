@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   app: {
     head: {
-      title: "9anime",
+      title: "9animix",
       titleTemplate: "%s - Watch animes without ads",
       link: [{ rel: "icon", type: "image/x-icon", href: "/delta_icon.png" }],
       meta: [
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         {
           hid: "og:title",
           property: "og:title",
-          content: "9anime - Watch animes without ads",
+          content: "9animix - Watch animes without ads",
         },
         {
           hid: "og:description",

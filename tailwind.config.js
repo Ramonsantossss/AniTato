@@ -7,6 +7,16 @@ module.exports = {
   theme: {
     extend: {},
   },
+  theme: {
+    extend: {
+        colors: {
+            custom: {
+                DEFAULT: '#10B981',
+                light: '#D1FAE5'
+            }
+        }
+  }
+},
   plugins: [require("@tailwindcss/forms")],
   plugins: [
     require('tailwind-scrollbar')

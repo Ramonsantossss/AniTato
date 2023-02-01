@@ -33,7 +33,7 @@
         <div class="my-5">
             <h1 class="mb-4 text-white text-xl">Recent Release</h1>
             <div v-if="recentRelease != null && recentRelease.length > 0"
-                class="flex overflow-x-auto gap-5 w-full snap-x scroll-smooth">
+                class="flex overflow-x-auto gap-5 w-full snap-x scroll-smooth h-32 scrollbar scrollbar-thumb-custom scrollbar-track-custom-light overflow-y-scroll">
                 <RecentReleaseComponent v-for="rr in recentRelease" :key="rr" :release="rr" class="snap-start" />
             </div>
             <div v-else class="h-28 grid place-content-center">
@@ -44,7 +44,7 @@
         <div class="mt-5 pb-8" v-if="server == 'gogoanime'">
             <h1 class="mb-4 text-white text-xl">Top Airing</h1>
             <div v-if="topAiring != null && topAiring.length > 0"
-                class="flex overflow-x-auto gap-5 w-full snap-x scroll-smooth">
+                class="flex overflow-x-auto gap-5 w-full snap-x scroll-smooth h-32 scrollbar scrollbar-thumb-custom scrollbar-track-custom-light overflow-y-scroll">
                 <RecentReleaseComponent v-for="ta in topAiring" :key="ta" :release="ta" class="snap-start" />
             </div>
             <div v-else class="h-28 grid place-content-center">

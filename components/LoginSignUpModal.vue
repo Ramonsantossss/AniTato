@@ -59,7 +59,7 @@
                                 </button>
                             </div>
                             <div class="mt-4">
-                                <label for="email" class="block text-sm font-bold">Email</label>
+                                <label for="email" class="block text-sm font-bold text-white">Email</label>
                                 <input type="email" name="email" id="email" v-model="email"
                                     class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 focus:outline-none focus:border-violet-700"
                                     autocomplete="off">

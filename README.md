@@ -1,4 +1,4 @@
-# 9anime Nuxt App
+# 9animix Nuxt App
 
 ## Setup
 
