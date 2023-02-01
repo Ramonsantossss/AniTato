@@ -8,7 +8,7 @@
             <div v-show="isOpen">
                 <div class="fixed inset-0 bg-black bg-opacity-50" @click="closeModal"></div>
                 <div class="fixed inset-0 overflow-y-auto z-50">
-                    <div class="flex min-h-full items-center justify-center p-4 text-center md:w-1/3 mx-auto">
+                    <div class="flex min-h-full items-center justify-center p-4 md:w-1/3 mx-auto">
                         <div v-if="login" class="bg-slate-800 rounded-lg shadow-lg p-4 w-full">
                             <div class="flex justify-between">
                                 <h1 class="text-2xl font-bold text-white">Login</h1>
@@ -26,13 +26,13 @@
                                     autocomplete="off">
                             </div>
                             <div class="mt-4">
-                                <label for="password" class="block text-sm font-bold text-white">Password</label>
+                                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
                                 <input type="password" name="password" id="password" v-model="password"
-                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 focus:outline-none focus:border-violet-700">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
                             <div class="mt-4 text-center">
                                 <button
-                                    class="bg-violet-700 text-white px-4 py-2 rounded-lg text-sm flex gap-1 justify-center mx-auto"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                     @click="loginFunction">
                                     <SpiningLoading v-if="isClicked"></SpiningLoading>
                                     Login
