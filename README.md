@@ -1,4 +1,4 @@
-# Shadow Anime Nuxt App
+# 9anime Nuxt App
 
 ## Setup
 

@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   app: {
     head: {
-      title: "Shadow Anime",
-      titleTemplate: "%s - Shadow Garden Anime",
+      title: "9anime",
+      titleTemplate: "%s - Watch animes without ads",
       link: [{ rel: "icon", type: "image/x-icon", href: "/delta_icon.png" }],
       meta: [
         { charset: "utf-8" },
@@ -13,18 +13,18 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Full list of the Most Popular and Must Watch Anime Online Free, with SUBBED and DUBBED. WATCH NOW!",
+            "Watch anime shows, tv, movies for free without ads in your mobile, tablet or pc",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: "Shadow Anime - Shadow Garden Anime",
+          content: "9anime - Watch animes without ads",
         },
         {
           hid: "og:description",
           property: "og:description",
           content:
-            "Full list of the Most Popular and Must Watch Anime Online Free, with SUBBED and DUBBED. WATCH NOW!",
+            "Watch anime shows, tv, movies for free without ads in your mobile, tablet or pc",
         },
         {
           hid: "og:image",

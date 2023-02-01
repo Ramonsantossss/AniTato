@@ -59,7 +59,7 @@
             </div>
         </transition>
         <!-- collapse sidebar -->
-        <div class="w-full min-h-screen absolute overflow-hidden z-50 hidden">
+        <!-- <div class="w-full min-h-screen absolute overflow-hidden z-50 hidden">
             <div class="bg-gray-800 w-3/4 md:w-2/5 lg:w-1/5" id="collapse-sidebar">
                 <ul class="list-none text-white">
                     <li v-for="item in sidebar_item" :key="item.id" class="py-4 px-4 border-b border-zinc-700"
@@ -70,7 +70,7 @@
             </div>
             <div class="bg-black opacity-60 w-full min-h-screen absolute -z-10" id="collapse-sidebar-bg"
                 @click="toggleSidebar()"></div>
-        </div>
+        </div>-->
     </div>
 </template>
 
@@ -82,7 +82,6 @@ export default {
             sidebar: false,
             sidebar_item: [
                 { id: 'home', name: 'Home', route: '/' },
-                { id: 'about', name: 'About', route: '/about' },
             ],
             checkUserId: '',
             showSearch: false,
