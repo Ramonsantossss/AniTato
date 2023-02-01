@@ -40,7 +40,7 @@
                             </div>
                             <div class="mt-4">
                                 <p class="text-sm text-white">Don't have an account? <span @click="login = false"
-                                        class="text-violet-700 cursor-pointer">
+                                        class="text-blue-600 hover:underline dark:text-blue-500">
                                         Sign Up
                                     </span></p>
                             </div>
@@ -59,15 +59,15 @@
                                 </button>
                             </div>
                             <div class="mt-4">
-                                <label for="email" class="block text-sm font-bold text-white">Email</label>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                                 <input type="email" name="email" id="email" v-model="email"
-                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 focus:outline-none focus:border-violet-700"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     autocomplete="off">
                             </div>
                             <div class="mt-4">
-                                <label for="password" class="block text-sm font-bold text-white">Password</label>
+                                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
                                 <input type="password" name="password" id="password" v-model="password"
-                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 focus:outline-none focus:border-violet-700">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
                             <div class="mt-4">
                                 <button
@@ -78,7 +78,7 @@
                             </div>
                             <div class="mt-4">
                                 <p class="text-sm text-white">Already have an account? <span @click="login = true"
-                                        class="text-violet-700 cursor-pointer">Login</span></p>
+                                        class="text-blue-600 hover:underline dark:text-blue-500">Login</span></p>
                             </div>
                             <div v-if="errorMessage" class="w-full text-center text-red-500 mt-4 text-sm">
                                 {{ errorMessage }}
