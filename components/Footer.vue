@@ -1,24 +1,7 @@
 <template>
-    <!--
-    <div class=" bg-neutral-700 rounded-lg mx-auto">
-        <div class="max-w-2xl mx-auto text-white py-5 ">
-            <div class="mt-10 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
-                <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; 9animix <span id="year"></span> </p>
-                <div class="order-1 md:order-2">
-                    <span class="px-2 border-l">Contact us</span>
-                    <span class="px-2 border-l">Privacy Policy</span>
-                </div>
-            </div>
-        </div>
-        <div class="text-xs text-zinc-400 container mx-auto py-5 px-5 text-center">
-            This project is a non-profit project. All the content is provided by the third party. We do not own any
-            of the content.
-        </div>
-    </div>-->
-    
 <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900">
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">9Animix™</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
