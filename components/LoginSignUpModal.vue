@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <button class=" bg-violet-700 text-white px-4 py-2 rounded-lg text-sm" @click="openModal">Login</button>
+            <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" @click="openModal">Login</button>
         </div>
         <transition enter-active-class="ease-out duration-300" enter-from-class="opacity-0" enter-to-class="opacity-100"
             leave-active-class="ease-in duration-200" leave-from-class="opacity-100" leave-to-class="opacity-0">
@@ -11,8 +11,8 @@
                     <div class="flex min-h-full items-center justify-center p-4 md:w-1/3 mx-auto">
                         <div v-if="login" class="bg-slate-800 rounded-lg shadow-lg p-4 w-full">
                             <div class="flex justify-between">
-                                <h1 class="text-2xl font-bold text-white">Login</h1>
-                                <button class="text-2xl font-bold text-white" @click="closeModal">
+                                <h1 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</h1>
+                                <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" @click="closeModal">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -71,7 +71,7 @@
                             </div>
                             <div class="mt-4">
                                 <button
-                                    class="bg-violet-700 text-white px-4 py-2 rounded-lg text-sm flex gap-1 justify-center mx-auto"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                     @click="signUpFunction">
                                     <SpiningLoading v-if="isClicked"></SpiningLoading> Sign Up
                                 </button>

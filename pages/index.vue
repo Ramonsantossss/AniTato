@@ -20,12 +20,12 @@
         </div>
         <div class="flex overflow-x-auto w-full gap-3 py-4 scroll-smooth scrollbar-thin scrollbar-thumb-custom">
             <div v-for="g in genre" :key="g.id" class="">
-                <div class="text-xs px-4 py-2 rounded-full bg-green-500 border-green-500 text-white whitespace-nowrap cursor-pointer"
+                <div class="text-xs px-4 py-2 rounded-full bg-purple-500 border-purple-500 text-white whitespace-nowrap cursor-pointer"
                     v-if="g.id == 'all'">
                     {{ g.name }}
                 </div>
                 <NuxtLink v-if="g.id != 'all'" :to="'/genre/' + g.id + '?page=1'"
-                    class="text-xs px-4 py-2 rounded-full bg-green-500 border-green-500 text-white whitespace-nowrap cursor-pointer">
+                    class="text-xs px-4 py-2 rounded-full bg-purple-900 border-purple-500 text-white whitespace-nowrap cursor-pointer">
                     {{ g.name }}
                 </NuxtLink>
             </div>
