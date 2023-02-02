@@ -3,7 +3,6 @@ module.exports = {
   content: [
     './pages/**/*.vue',
     './components/**/*.vue',
-    './node_modules/flowbite.{js,ts}',
   ],
   theme: {
     extend: {},
@@ -20,9 +19,7 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/forms")],
   plugins: [
-    require("@tailwindcss/forms"),
     require('tailwind-scrollbar'),
-    require('flowbite/plugin')
   ],
   variants: {
     scrollbar: ['rounded']
