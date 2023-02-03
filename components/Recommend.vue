@@ -1,5 +1,5 @@
 <template>
-    <div class="flex overflow-x-auto gap-5 w-full snap-x scroll-smooth" v-if="genreDetail">
+    <div class="flex overflow-x-auto gap-5 w-full snap-x scroll-smooth scrollbar-thin scrollbar-thumb-custom" v-if="genreDetail">
         <div v-for="g in genreDetail" :key="g">
             <RecentReleaseComponent :release="g"></RecentReleaseComponent>
         </div>
