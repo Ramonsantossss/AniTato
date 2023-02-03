@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   app: {
     head: {
-      title: "9animix",
+      title: "9Aniplay",
       titleTemplate: "%s - Watch animes without ads",
-      link: [{ rel: "icon", type: "image/x-icon", href: "/delta_icon.png" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "https://d4.alternativeto.net/qOUfLCyFQ-70alqi28JbEZrmi9oNnWmaqmmND0fj9m8/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy85YW5pbWVfMTA3NTM5LnBuZw.png" }],
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         {
           hid: "og:title",
           property: "og:title",
-          content: "9animix - Watch animes without ads",
+          content: "9Aniplay - Watch animes without ads",
         },
         {
           hid: "og:description",

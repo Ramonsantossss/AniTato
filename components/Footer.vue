@@ -1,7 +1,7 @@
 <template>
 <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900">
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">9Animix™</a>. All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">9Aniplay™</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="https://discord.com" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
