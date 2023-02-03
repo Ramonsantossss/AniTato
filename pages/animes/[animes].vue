@@ -1,6 +1,5 @@
 <template>
     <div class="container mx-auto min-h-screen py-4">
-        <br/><br/><br/><br/><br/>
         <div v-if="anime.title != ''">
             <div class="w-full">
                 <div class="w-full py-5 h-full">
