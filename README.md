@@ -1,4 +1,4 @@
-# 9Aniplay Nuxt App
+# 9Aniplay 
 
 ## Setup
 
@@ -38,11 +38,3 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-
-## Anime Nuxt App
-# Sample Image
-<!-- insert sample image in readme --> 
-![sample image](https://github.com/isaactan98/anime-nuxt-app/blob/main/sample_img.png)
-
-
