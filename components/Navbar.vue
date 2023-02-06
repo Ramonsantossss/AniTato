@@ -11,7 +11,7 @@
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">9Aniplay</span>
             </a>
         </div>
-        <div class="absolute w-full" >
+        <div class="absolute w-full">
                 <div class="flex relative justify-center container mx-auto">
                     <input type="text" name="price" id="price"
                         class="block w-full rounded-md border-gray-300 pl-7 pr-12 py-3 shadow-md focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
