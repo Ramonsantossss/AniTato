@@ -11,7 +11,7 @@
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">9Aniplay</span>
             </a>
         </div>
-        <div class="absolute w-full">
+        <div class="w-2/5">
                 <div class="flex relative justify-center container mx-auto">
                     <input type="text" name="price" id="price"
                         class="block w-full rounded-md border-gray-300 pl-7 pr-12 py-3 shadow-md focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -35,16 +35,9 @@
                     </div>
                 </div>
             </div>
+            
             <li class="flex items-center gap-3">
-                <button @click="toggleSearch" v-show="!showSearch" class="mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                        class="w-6 h-6 text-white font-extrabold">
-                        <path fillRule="evenodd"
-                            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                            clipRule="evenodd" />
-                    </svg>
-                </button>
-
+                <button class="mr-1"></button>
                 <div class="relative top-1">
                     <ProfileDropdown v-if="checkUserId || userId"></ProfileDropdown>
                     <LoginSignUpModal v-else></LoginSignUpModal>
@@ -52,6 +45,7 @@
             </li>
         </ul>
     </nav>
+    <!--
     <div class="">
         <transition enter-active-class="transition duration-100 ease-out"
             enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
@@ -82,7 +76,7 @@
                 </div>
             </div>
         </transition>
-    </div>
+    </div>-->
 </template>
 
 <script>
