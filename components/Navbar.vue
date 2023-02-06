@@ -1,5 +1,5 @@
 <template>
-    <nav class="">
+    <nav class="z-50 dark:bg-gray-900 sticky top-0 w-full shadow-md">
         <ul class="flex items-center justify-between container list-none px-2 py-4 mx-auto">
             <li class="text-white">
                 <button>
