@@ -1,7 +1,7 @@
 <template>
     <nav class="z-50 dark:bg-gray-900 sticky top-0 w-full shadow-md">
         
-        <ul class="flex items-center justify-between container px-2 py-4 mx-auto">
+        <ul class="flex items-center justify-between container list-none px-2 py-4 mx-auto">
             <li class="text-white">
                 <button>
                 </button>
@@ -31,7 +31,7 @@
                     </div>
                     <input type="text" name="price" id="price"
                         class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required
-                        placeholder="Search anime ..." v-model="searchQuery" autocomplete="off" autofocus>
+                        placeholder="Search anime ..." v-model="searchQuery">
 
                 </div>
             </div>
