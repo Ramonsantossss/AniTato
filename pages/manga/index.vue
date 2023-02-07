@@ -54,7 +54,7 @@
             </div>
             <div class=" w-2/3 mx-auto" v-if="manga.length == 0">
                 <!--IMAGE LINK: https://shadow-garden.jp/assets/img/character/chara10_main1.png-->
-                <img src="" class=" w-full" alt="">
+                <img src="" class="content-center" alt="">
             </div>
         </div>
     </div>
