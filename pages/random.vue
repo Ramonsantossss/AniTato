@@ -126,16 +126,25 @@ export default {
 
         this.userId = sessionStorage.getItem('userId');
 
-        const getCODE = async () => {
-            let code;
-            await fetch("https://api.jikan.moe/v4/random/anime")
-                .then((response) => response.json())
-                .then((data) => {
-            One=data.data.title;
-            code=One.toLowerCase().replace(/ /g, '-');
-            });
+        
+
+        function getData() {
+            return new Promise((resolve, reject) => {
+            fetch("https://api.jikan.moe/v4/random/anime")
+                .then(response => {
+                return response.json();
+            }).then((data) => {
+                    One=data.data.title;
+                    var code=One.toLowerCase().replace(/ /g, '-');
+                    resolve(code);
+                })
+            })    
         }
-        var id=getCODE()
+
+        getData().then(id => {
+            console.log(id)
+        });
+        
         const config = useRuntimeConfig();
 
         this.server = localStorage.getItem('server') == 'gogoanime' ? 'Gogoanime' : 'Zoro.to';
@@ -143,10 +152,14 @@ export default {
         var url = '';
 
         if (localStorage.getItem('server') == 'gogoanime') {
-            url = config.apiUrl + 'info/' + id
+            getData().then(id => {
+                url = config.apiUrl + 'info/' + id
+            });
             this.serverUrl = "https://gogoanime.mom"
         } else {
-            url = config.apiUrl2 + 'info?id=' + id
+            getData().then(id => {
+                url = config.apiUrl + 'info/' + id
+            });
             this.serverUrl = "https://zoro.to"
         }
 
