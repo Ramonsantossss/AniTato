@@ -134,8 +134,7 @@ export default {
                 .then(response => {
                 return response.json();
             }).then((data) => {
-                    One=data.data.title;
-                    var code=One.toLowerCase().replace(/ /g, '-');
+                    var code=data.data.title.toLowerCase().replace(/ /g, '-');
                     resolve(code);
                 })
             })    
