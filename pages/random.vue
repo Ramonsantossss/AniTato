@@ -162,13 +162,14 @@ export default {
             this.serverUrl = "https://zoro.to"
         }
 
-        fetch(url)
+        fetch('https://api.jikan.moe/v4/random/anime')
             .then(response => response.json())
             .then(data => {
                 // console.log(data)
                 if (data.id != null) {
+                    var code=data.data.title.toLowerCase().replace(/ /g, '-');
                     this.anime.id = data.id;
-                    this.anime.title = data.title;
+                    this.anime.title = code;
                     this.anime.otherName = data.otherName
                     this.anime.description = data.description;
                     this.anime.url = data.url;
