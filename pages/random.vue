@@ -1,23 +1,24 @@
 <template>
-    <main-masterpage-vue>
-      <anime-full-info-vue :animeInfo="randomAnime" />
-    </main-masterpage-vue>
-    
+    <div>
+      <p>{{ randomAnimeName }}</p>
+      <button @click="generateRandomAnimeName">Generate Random Anime Name</button>
+    </div>
   </template>
   
   <script>
+  import axios from "axios";
+  
   export default {
-    name: "App",
-    computed: {
-      randomAnime() {
-        console.log(this.$store.state.randomAnimeInfo);
-        return this.$store.state.randomAnimeInfo;
-      },
+    data() {
+      return {
+        randomAnimeName: ""
+      };
     },
-    mounted() {
-      this.$store.dispatch("fetchRandomAnime");
-    },
+    methods: {
+      async generateRandomAnimeName() {
+        const response = await axios.get("https://api.jikan.moe/v4/random/anime");
+        this.randomAnimeName = response.data.title;
+      }
+    }
   };
   </script>
-  
-  <style></style>
