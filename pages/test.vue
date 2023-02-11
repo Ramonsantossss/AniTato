@@ -13,32 +13,9 @@
                 </span>
             </h1>
         </div>
-      <div class="p-4 mt-4 mx-auto md:w-3/4" v-if="anime.genres">
-        <Recommend :genre="anime.genres" :id="anime.id"></Recommend>
+      <div class="p-4 mt-4 mx-auto md:w-3/4">
+        <Recommend></Recommend>
       </div>
-      <div v-if="loading == false" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            <div v-for="release in recentRelease" :key="release" class="relative mb-3">
-                <a :href="'/animes/' + release.id" class="relative">
-                    <div class="">
-                        <img :src="release.image" alt="" class="rounded-xl object-cover h-72 lg:h-[32rem]">
-                    </div>
-                    <div class="relative flex justify-between items-center ">
-                        <div
-                            class="w-full h-32 absolute bottom-0 bg-gradient-to-t from-black to-transparent rounded-b-xl">
-                        </div>
-                        <div class="px-2 py-1 rounded-md bg-purple-500 text-white absolute left-1 bottom-1">
-                            <h3 class="truncate text-xs lg:text-sm max-w-[4rem] lg:max-w-[10rem]">
-                                {{ release.title }}
-                            </h3>
-                        </div>
-                        <span class="bg-white rounded-md text-sm px-2 absolute bottom-1 right-3"
-                            v-if="release.episode || release.episodeNumber">
-                            EP {{ release.episode ?? release.episodeNumber }}
-                        </span>
-                    </div>
-                </a>
-            </div>
-        </div>
     </div>
 </template>
 
