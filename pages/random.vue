@@ -1,4 +1,3 @@
-
 <template>
     <div class="container mx-auto min-h-screen py-4">
         <div v-if="anime.title != ''">
@@ -126,24 +125,16 @@ export default {
 
         this.userId = sessionStorage.getItem('userId');
 
-        
-
-        function getData() {
-            return new Promise((resolve, reject) => {
-            fetch("https://api.jikan.moe/v4/random/anime")
-                .then(response => {
-                return response.json();
-            }).then((data) => {
-                    var code=data.data.title.toLowerCase().replace(/ /g, '-');
-                    resolve(code);
-                })
-            })    
-        }
-
-        getData().then(id => {
-            console.log(id)
-        });
-        
+        const route = useRoute();
+        var id = route.params.animes;
+        const test = [{}];
+        fetch("https://api.jikan.moe/v4/random/anime").then(response => { return response.json() }).then((data) => {code=data.data.title.toLowerCase().replace(/ /g, '-'); test.push(code);})
+        console.log(test);
+        ss=[{"id":0,"name": {test}}]
+        var frequencies = [{"id":45,"name":"eee"}];
+        console.log(frequencies)            
+        var result = frequencies.find(function(fur) {return fur.id == 0;});
+        console.log(result)
         const config = useRuntimeConfig();
 
         this.server = localStorage.getItem('server') == 'gogoanime' ? 'Gogoanime' : 'Zoro.to';
@@ -151,14 +142,10 @@ export default {
         var url = '';
 
         if (localStorage.getItem('server') == 'gogoanime') {
-            getData().then(id => {
-                url = config.apiUrl + 'info/' + id
-            });
+            url = config.apiUrl + 'info/' + id
             this.serverUrl = "https://gogoanime.mom"
         } else {
-            getData().then(id => {
-                url = config.apiUrl + 'info/' + id
-            });
+            url = config.apiUrl2 + 'info?id=' + id
             this.serverUrl = "https://zoro.to"
         }
 
