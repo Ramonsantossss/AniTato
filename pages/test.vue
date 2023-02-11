@@ -1,6 +1,10 @@
 <template>
-    <div class="min-h-screen">
-        <h1 class="text-white">Redirecting...</h1>
+  <div class="container p-4 mx-auto min-h-screen">
+      <div class="text-white my-4 min-h-[20vh] flex items-center">
+          <h1 class="text-4xl font-extrabold">
+              Redirecting...
+          </h1>
+      </div>
     </div>
 </template>
 
@@ -16,7 +20,7 @@ export default {
     created() {
     axios.get('https://api.jikan.moe/v4/random/anime')
       .then(response => {
-        title = response.data.data.title.toLowerCase().replace(/ /g, '-');
+        var title = response.data.data.title.toLowerCase().replace(/ /g, '-');
         this.$router.push('/animes/' + title)
       })
       .catch(error => {
