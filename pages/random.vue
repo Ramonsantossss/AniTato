@@ -130,9 +130,10 @@ export default {
         const test = [{}];
         fetch("https://api.jikan.moe/v4/random/anime").then(response => { return response.json() }).then((data) => {code=data.data.title.toLowerCase().replace(/ /g, '-'); test.push(code);})
         console.log(test);
-        ss=[{"id":0,"name": {test}}]
+        var ss=[{"id":0,"name": {test}}]
         var frequencies = [{"id":45,"name":"eee"}];
-        console.log(frequencies)            
+        console.log(frequencies)
+        console.log(ss)            
         var result = frequencies.find(function(fur) {return fur.id == 0;});
         console.log(result)
         const config = useRuntimeConfig();
