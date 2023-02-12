@@ -14,7 +14,7 @@
         </div>
 
         <div class="container mx-auto">
-            <div class="w-full md:w-2/3"md:w-2/3">
+            <div class="w-full md:w-2/3">
                 <div class="w-full flex items-center">
                     <input type="text"
                         class="bg-gray-200 w-full rounded-full py-2 px-4 text-gray-700 focus:outline-none focus:bg-white focus:text-gray-900"
