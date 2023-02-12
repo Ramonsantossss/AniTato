@@ -14,7 +14,7 @@
         </div>
 
         <div class="container mx-auto">
-            <div class="w-full">
+            <div class="w-full md:w-2/3"md:w-2/3">
                 <div class="w-full flex items-center">
                     <input type="text"
                         class="bg-gray-200 w-full rounded-full py-2 px-4 text-gray-700 focus:outline-none focus:bg-white focus:text-gray-900"
@@ -52,7 +52,7 @@
             <div class="w-full flex justify-center mt-3" v-if="manga.length > 0">
                 <!-- <NuxtLink class="text-white">Load More</NuxtLink> -->
             </div>
-            <div class=" w-2/3 mx-auto content-center" v-if="manga.length == 0">
+            <div class="w-full md:w-2/3 content-center" v-if="manga.length == 0">
                 <!--IMAGE LINK: https://shadow-garden.jp/assets/img/character/chara10_main1.png-->
                 <img src="https://i.imgur.com/HOer4h4.png" class="" alt="">
             </div>
@@ -73,7 +73,7 @@ export default {
         // this.searchManga()
         document.getElementById('searchManga').focus()
         document.getElementById('searchManga').addEventListener('keydown', (e) => {
-            console.log(e.key)
+            // console.log(e.key)
             if (e.key === 'Enter') {
                 this.searchManga()
             }
@@ -94,7 +94,7 @@ export default {
                 await fetch('https://api.consumet.org/manga/mangasee123/' + this.search)
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data)
+                        // console.log(data)
                         this.manga = data.results
                         this.loading = false
                     })
