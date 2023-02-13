@@ -22,5 +22,5 @@ export default defineNuxtPlugin((nuxtApp) => {
   };
 
   // Initialize Firebase
-  initializeApp(firebaseConfig);
+  initializeApp(firebaseConfig, {experimentalAutoDetectLongPolling: true});
 });
