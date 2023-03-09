@@ -44,7 +44,7 @@ export default {
                 })
         },
         async getChapter() {
-            await fetch('https://api.consumet.org/manga/mangasee123/read?chapterId=' + this.$route.params.volume)
+            await axios.get(url, { params: { chapterId: this.$route.params.volume } })
                 .then(res => res.json())
                 .then(data => {
                     // console.log(data)
